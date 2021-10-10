@@ -6,11 +6,11 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:30:07 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/09 18:43:38 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/10 15:53:41 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(char c)
+int ft_isprint(char c)
 {
     if(c >= 32 && c <= 126)
         return(1);
