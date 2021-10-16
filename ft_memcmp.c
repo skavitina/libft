@@ -6,7 +6,7 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 18:56:14 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/10 19:03:32 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/16 15:59:32 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int ft_memcmp(const void *string1, const void *string2, size_t n)
     return(0);
 }
 
-
+/*
 int main()
 {
     char a[] = "ab";
@@ -41,3 +41,4 @@ int main()
     printf("%d", memcmp(a, b, 2));
     return(0);
 }
+*/

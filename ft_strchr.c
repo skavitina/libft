@@ -6,12 +6,12 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:15 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/10 17:03:19 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/16 15:58:27 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-//#include <string.h>
+#include <string.h>
 
 char *ft_strchr(const char *str, int ch)
 {
@@ -24,7 +24,8 @@ char *ft_strchr(const char *str, int ch)
     return (NULL);
 }
 
-/* int main()
+/*
+int main()
 {
     const char a[] = "jdslkfjdl";
     int n = 'd';

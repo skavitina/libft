@@ -6,7 +6,7 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:43 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/10 18:18:20 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/16 14:29:48 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int ft_strncmp(const char *string1, const char *string2, size_t num)
 }
 
 
-int main()
+/*int main()
 {
     char a[] = "ab";
     char b[] = "ac";
@@ -41,4 +41,4 @@ int main()
     printf("%d\n", ft_strncmp(a, b, 4));
     printf("%d", strncmp(a, b, 4));
     return(0);
-}
+}*/

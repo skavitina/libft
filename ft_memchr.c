@@ -6,7 +6,7 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:30:16 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/10 18:51:19 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/16 15:59:42 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@
     return(NULL);
  }
 
+/*
 int main()
 {
 	const char a[] = "jdslkfjdl";
@@ -38,3 +39,4 @@ int main()
 	printf("%s\n", memchr(a, n, 3));
 	return (0);
 }
+*/
