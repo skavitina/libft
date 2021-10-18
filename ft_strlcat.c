@@ -5,22 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/09 18:32:26 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/09 18:32:27 by tpeggie          ###   ########.fr       */
+/*   Created: 2021/10/18 19:15:04 by tpeggie           #+#    #+#             */
+/*   Updated: 2021/10/18 20:05:56 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
-size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t	dstsize)
 {
-	size_t len;
-	size_t srclen;
+	size_t	len;
+	size_t	srclen;
 
 	len = 0;
-	srclen = ft_strlen((char *)src);
+	srclen = ft_strlen ((char *)src);
 	while (*dst && dstsize > 0)
 	{
 		dst++;
@@ -31,7 +29,7 @@ size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize
 		*dst++ = *src++;
 	if (dstsize == 1 || *src == 0)
 		*dst = '\0';
-	return(srclen + len);
+	return (srclen + len);
 }
 
 /*
@@ -42,4 +40,4 @@ int main()
 	printf("%zu\n", ft_strlcat(a, b, 4));
 	printf("%lu", strlcat(a, b, 4));
 }
-*\
+*/

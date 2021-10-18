@@ -6,18 +6,18 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:35 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/10 17:47:32 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/18 20:07:42 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(char  *str)
+int	ft_strlen(char	*str)
 {
-    int count;
+	int	count;
 
-    count = 0;
-    while(str[count] != '\0')
-        count++;
-    return(count);
+	count = 0;
+	while (str[count] != '\0')
+		count++;
+	return (count);
 }

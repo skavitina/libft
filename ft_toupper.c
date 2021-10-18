@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:57 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/17 16:12:26 by maria            ###   ########.fr       */
+/*   Updated: 2021/10/18 20:43:18 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int  c)
+int	ft_toupper(int c)
 {
-    if(ft_isalpha(c))
-        return(c - 'a' + 'A');
-    else
-        return(c);
+	if (ft_isalpha(c))
+		return (c - 'a' + 'A');
+	else
+		return (c);
 }

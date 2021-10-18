@@ -3,31 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:29:17 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/17 19:20:31 by maria            ###   ########.fr       */
+/*   Updated: 2021/10/18 19:29:25 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-int ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
-	int i;
+	int	i;
 	int	negative;
 	int	nb;
 
 	i = 0;
 	negative = 0;
 	nb = 0;
-	while ((str[i] == '\t') || (str[i] == '\n') || (str[i] == '\v') || (str[i] == '\f') || (str[i] == '\r') || (str[i] == ' '))
+	while ((str[i] == '\t') || (str[i] == '\n') || (str[i] == '\v') \
+	|| (str[i] == '\f') || (str[i] == '\r') || (str[i] == ' '))
 		i++;
-	if(str[i] == '-')
+	if (str[i] == '-')
 		negative = 1;
-	if((str[i] == '-') || (str[i] == '+'))
+	if ((str[i] == '-') || (str[i] == '+'))
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
@@ -35,12 +34,12 @@ int ft_atoi(char *str)
 		nb = nb + ((int)str[i] - '0');
 		i++;
 	}
-	if(negative == 1)
-		return(-nb);
+	if (negative == 1)
+		return (-nb);
 	else
-		return(nb);
+		return (nb);
 }
-
+/*
 int main()
 {
 	char a[] = "   -93838";
@@ -48,3 +47,4 @@ int main()
 	printf("%d\n", atoi(a));
 	return(0);
 }
+*/

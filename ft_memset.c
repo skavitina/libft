@@ -3,29 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:30:26 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/17 16:11:30 by maria            ###   ########.fr       */
+/*   Updated: 2021/10/18 20:02:24 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-void *ft_memset(void *dest, int c, size_t count)
+void	*ft_memset(void	*dest, int c, size_t	count)
 {
-    unsigned char *ptr;
-    ptr = (unsigned char *)dest;
-    while(count--)
-        *ptr++ = (unsigned)c;
-    return(dest);
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)dest;
+	while (count--)
+		*ptr++ = (unsigned)c;
+	return (dest);
 }
 
 /*
 int main()
 {
-    char buffer[] = "This is a test of the memset function";
-    printf("After:  %s\n", ft_memset(buffer, '*', 4 )); 
+	char buffer[] = "This is a test of the memset function";
+	printf("After:  %s\n", ft_memset(buffer, '*', 4 )); 
 }
 */

@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:49 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/17 16:12:13 by maria            ###   ########.fr       */
+/*   Updated: 2021/10/18 20:40:23 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
-char *ft_strrchr(const char *str, int ch)
+char	*ft_strrchr(const char	*str, int ch)
 {
-	int len;
+	int	len;
 
 	len = ft_strlen((char *)str) - 1;
 	while (len >= 0)

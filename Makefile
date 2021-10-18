@@ -1,5 +1,6 @@
 NAME = libft.a
 
+
 LIST =  ft_atoi.c		ft_bzero.c		ft_calloc.c\
         ft_isalnum.c	ft_isalpha.c	ft_isascii.c\
         ft_isdigit.c	ft_isprint.c	ft_memchr.c\
@@ -8,18 +9,21 @@ LIST =  ft_atoi.c		ft_bzero.c		ft_calloc.c\
         ft_strlcpy.c	ft_strlen.c		ft_strncmp.c\
         ft_strnstr.c	ft_tolower.c	ft_toupper.c
 
+HEADER = libft.h
+
 OBJ = $(patsubst %.c,%.o, $(LIST))
 
 RM  =   rm -f
-FLAGS = -Wall -Wextra -Werror -I
+FLAGS = -Wall -Wextra -Werror -I$(HEADER)
+CC = gcc
 
 all:    $(NAME)
 
-$(NAME)	:	$(OBJ)
+$(NAME)	:	$(OBJ) $(HEADER)
 					ar rcs $(NAME) $?
 
-%.o : %.c
-					gcc $(FLAGS) -c $< -o $@
+%.o : %.c $(HEADER)
+					$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)
