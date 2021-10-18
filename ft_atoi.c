@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:29:17 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/09 18:29:18 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/17 19:20:31 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
 int ft_atoi(char *str)
 {
@@ -40,11 +41,10 @@ int ft_atoi(char *str)
 		return(nb);
 }
 
-/*int main()
+int main()
 {
 	char a[] = "   -93838";
 	printf("%d\n", ft_atoi(a));
 	printf("%d\n", atoi(a));
 	return(0);
 }
-*/

@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:29:40 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/09 20:11:29 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/10/17 16:16:45 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int ft_isalpha(char c)
 {
     if(c >= 'A' && c <= 'Z')
-        // return(1);
+        return(1);
     else if(c >= 'a' && c <= 'z')
         return(1);
     else
