@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:15 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 11:05:40 by maria            ###   ########.fr       */
+/*   Updated: 2021/11/11 14:34:22 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,16 @@
 
 char	*ft_strchr(const char	*str, int ch)
 {
-	while (*str)
+	int	i;
+	
+	i = 0;
+	while (str[i])
 	{
-		if (*str == (char)ch)
-			return ((char *)str);
-		str++;
+		if (str[i] == (char)ch)
+			return ((char *)(str + i));
+		i++;
 	}
+	if (str[i] == (char)ch)
+		return ((char *)(str + i));
 	return (NULL);
 }

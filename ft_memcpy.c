@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:30:19 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 11:26:57 by maria            ###   ########.fr       */
+/*   Updated: 2021/11/11 13:27:56 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,19 @@
 
 void	*ft_memcpy(void *restrict	dst, const void	*restrict src, size_t	n)
 {
-	unsigned char	*source;
-	unsigned char	*destination;
-
-	source = (unsigned char *)src;
-	destination = (unsigned char *)dst;
-	if ((source == NULL) && (destination == NULL))
+	char		*d;
+	const char	*s;
+	
+	if (!dst && !src)
 		return (NULL);
-	while (n--)
-		*destination++ = *source++;
-	return (destination);
+	d = dst;
+	s = src;
+	while (n)
+	{
+		*d++ = *s++;
+		n--;
+	}
+	return (dst);
+	
 }
 

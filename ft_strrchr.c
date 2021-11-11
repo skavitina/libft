@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:49 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 11:06:59 by maria            ###   ########.fr       */
+/*   Updated: 2021/11/11 14:35:33 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strrchr(const char	*str, int ch)
 {
 	int	len;
 
-	len = ft_strlen((char *)str) - 1;
+	len = ft_strlen((char *)str);
 	while (len >= 0)
 	{
 		if (str[len] == (char)ch)
@@ -25,3 +25,4 @@ char	*ft_strrchr(const char	*str, int ch)
 	}
 	return (NULL);
 }
+

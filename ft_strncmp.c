@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:43 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 11:06:38 by maria            ###   ########.fr       */
+/*   Updated: 2021/11/11 14:50:25 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ int	ft_strncmp(const char	*string1, const char	*string2, size_t	num)
 	i = 0;
 	ptr1 = (unsigned char *)string1;
 	ptr2 = (unsigned char *)string2;
-	while (*ptr1 && *ptr2 && i < num)
+	while (num--)
 	{
-		if (ptr1[i] != ptr2[i])
+		if (ptr1[i] != ptr2[i] || ptr1[i] == 0 || ptr2[i] == 0)
 			return (ptr1[i] - ptr2[i]);
 		i++;
 	}
