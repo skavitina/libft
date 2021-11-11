@@ -1,5 +1,16 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/11 22:28:36 by tpeggie           #+#    #+#             */
+/*   Updated: 2021/11/11 22:28:45 by tpeggie          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_znak(int n)
 {
@@ -12,11 +23,10 @@ int	ft_znak(int n)
 int	ft_len_num(int n)
 {
 	int	count;
-
-	if (ft_znak(n) < 0)
+	
+	count = 0;
+	if (n == 0)
 		count = 1;
-	else
-		count = 0;
 	while (n != 0)
 	{
 		n = n / 10;
@@ -31,7 +41,7 @@ char	*ft_itoa(int n)
 	char	*str;
 	int		znak;
 
-	count = ft_len_num(n);
+	count = ft_len_num(n) + (n < 0);
 	znak = ft_znak(n);
 	str = (char *)malloc(sizeof(char) * (count + 1));
 	if (str == NULL)

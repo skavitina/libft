@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:46 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 11:06:51 by maria            ###   ########.fr       */
+/*   Updated: 2021/11/11 22:31:31 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,18 @@
 char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len)
 {
 	size_t	needle_len;
-	char	*hs;
-	char	*ndl;
+	size_t	i;
 
-	ndl = (char *)needle;
-	needle_len = ft_strlen (ndl);
-	hs = (char *)haystack;
-	if (needle_len > len)
-		return (NULL);
-	if (len == 0)
-		return (hs);
-	while (*hs && len--)
+	i = 0;
+	needle_len = ft_strlen((char *)needle);
+	if (!*needle)
+		return ((char *)haystack);
+	while (*haystack && (len > 0) && (i <= len - needle_len))
 	{
-		if (ft_strncmp(hs, ndl, len) == 0)
-			return (hs);
-		hs++;
+		if (ft_strncmp(haystack, needle, needle_len) == 0)
+			return ((char *)haystack);
+		haystack++;
+		i++;
 	}
 	return (NULL);
 }
