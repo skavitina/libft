@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:49 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:40:23 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:06:59 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ char	*ft_strrchr(const char	*str, int ch)
 	}
 	return (NULL);
 }
-
-/*int main()
-{
-	const char a[] = "jdslkfjdl";
-	int n = 'd';
-	printf("%s\n", ft_strrchr(a, n));
-	printf("%s\n", strrchr(a, n));
-	return (0);
-}
-*/

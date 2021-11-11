@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:29:26 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 19:40:07 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:03:55 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ void	ft_bzero(void *dest, size_t count)
 	while (count--)
 		*ptr++ = '\0';
 }
-/*
-int main()
-{
-	char a = "123";
-	int b = 2;
-	printf("s", ft_bzero(a, b));
-	return(0);
-}
-*/

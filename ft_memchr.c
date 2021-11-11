@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:30:16 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 19:56:04 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:04:35 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ void	*ft_memchr(const void	*s, int c, size_t	n)
 	}
 	return (NULL);
 }
-
-/*
-int main()
-{
-	const char a[] = "jdslkfjdl";
-	int n = 'd';
-	printf("%s\n", ft_memchr(a, n, 3));
-	printf("%s\n", memchr(a, n, 3));
-	return (0);
-}
-*/

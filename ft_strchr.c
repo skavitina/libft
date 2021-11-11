@@ -3,15 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:15 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:03:01 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:05:40 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strchr(const char	*str, int ch)
@@ -24,14 +22,3 @@ char	*ft_strchr(const char	*str, int ch)
 	}
 	return (NULL);
 }
-
-/*
-int main()
-{
-	const char a[] = "jdslkfjdl";
-	int n = 'd';
-	printf("%s\n", ft_strchr(a, n));
-	printf("%s\n", strchr(a, n));
-	return (0);
-}
-*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:29:17 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 19:29:25 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:03:49 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ int	ft_atoi(char *str)
 	else
 		return (nb);
 }
-/*
-int main()
-{
-	char a[] = "   -93838";
-	printf("%d\n", ft_atoi(a));
-	printf("%d\n", atoi(a));
-	return(0);
-}
-*/

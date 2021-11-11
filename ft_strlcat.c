@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 19:15:04 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:05:56 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:06:11 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t	dstsize)
 		*dst = '\0';
 	return (srclen + len);
 }
-
-/*
-int main()
-{
-	char a[] = "1234";
-	char b[] = "234";
-	printf("%zu\n", ft_strlcat(a, b, 4));
-	printf("%lu", strlcat(a, b, 4));
-}
-*/

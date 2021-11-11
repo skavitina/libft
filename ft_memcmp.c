@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 18:56:14 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 19:57:30 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:04:50 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,3 @@ int	ft_memcmp(const void	*string1, const void	*string2, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-	char a[] = "ab";
-	char b[] = "ac";
-	
-	printf("%d\n", ft_memcmp(a, b, 2));
-	printf("%d", memcmp(a, b, 2));
-	return(0);
-}
-*/

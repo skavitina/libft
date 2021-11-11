@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:54 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:42:31 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 12:09:47 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if (ft_isalpha(c))
-		return (c - 'A' + 'a');
-	else
-		return (c);
+	if ('A' <= c && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

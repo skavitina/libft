@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:43 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:38:33 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:06:38 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ int	ft_strncmp(const char	*string1, const char	*string2, size_t	num)
 	}
 	return (0);
 }
-
-/*int main()
-{
-	char a[] = "ab";
-	char b[] = "ac";
-	
-	printf("%d\n", ft_strncmp(a, b, 4));
-	printf("%d", strncmp(a, b, 4));
-	return(0);
-}*/

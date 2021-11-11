@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:32:57 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:43:18 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 12:10:06 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	if (ft_isalpha(c))
-		return (c - 'a' + 'A');
-	else
-		return (c);
+	if ('a' <= c && c <= 'z')
+		return (c - 32);
+	return (c);
 }

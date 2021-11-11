@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:30:26 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/10/18 20:02:24 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/11 11:03:42 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,3 @@ void	*ft_memset(void	*dest, int c, size_t	count)
 		*ptr++ = (unsigned)c;
 	return (dest);
 }
-
-/*
-int main()
-{
-	char buffer[] = "This is a test of the memset function";
-	printf("After:  %s\n", ft_memset(buffer, '*', 4 )); 
-}
-*/
