@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 21:50:17 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 22:17:55 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/12 16:48:40 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	if (!s1|| !s2)
+	if (!s1 || !s2)
 		return (NULL);
 	lens1 = ft_strlen((char *)s1);
 	lens2 = ft_strlen((char *)s2);
@@ -35,9 +35,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	i = 0;
 	while (i < lens2)
-	{
 		str[j++] = s2[i++];
-	}
 	str[j] = '\0';
 	return (str);
 }

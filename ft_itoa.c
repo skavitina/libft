@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 22:28:36 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 22:28:45 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/12 16:54:12 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_znak(int n)
+static int	ft_znak(int n)
 {
 	if (n < 0)
 		return (-1);
@@ -20,10 +20,10 @@ int	ft_znak(int n)
 		return (1);
 }
 
-int	ft_len_num(int n)
+static int	ft_len_num(int n)
 {
 	int	count;
-	
+
 	count = 0;
 	if (n == 0)
 		count = 1;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 15:49:33 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 23:24:41 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/12 16:50:24 by maria            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,14 @@ const char	*string2, size_t	num);
 void		*ft_memcpy(void *dst, const void	*src, size_t	n);
 void		*ft_memmove(void	*dst, const void	*src, size_t len);
 size_t		ft_strlcat(char *dst, \
-const char 	*src, size_t	dstsize);
+const char	*src, size_t dstsize);
 size_t		ft_strlcpy(char *dst, \
-const char 	*src, size_t	dstsize);
+const char	*src, size_t dstsize);
 void		*ft_memchr(const	void	*s, int c, size_t	n);
-int			ft_memcmp(const void	*string1, const void	*string2, size_t	n);
-char		*ft_strnstr(const char	*haystack, const char	*needle, size_t	len);
+int			ft_memcmp(const void	*string1, \
+const void	*string2, size_t	n);
+char		*ft_strnstr(const char	*haystack, \
+const char	*needle, size_t	len);
 void		*ft_calloc(size_t	count, size_t	size);
 char		*ft_substr(char const	*s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
