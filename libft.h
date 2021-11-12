@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maria <maria@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 15:49:33 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/12 16:50:24 by maria            ###   ########.fr       */
+/*   Updated: 2021/11/12 21:08:36 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdlib.h>
 # include <stdlib.h>
 
 int			ft_atoi(const char *str);

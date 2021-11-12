@@ -6,7 +6,7 @@
 /*   By: tpeggie <tpeggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 22:11:16 by tpeggie           #+#    #+#             */
-/*   Updated: 2021/11/11 22:17:12 by tpeggie          ###   ########.fr       */
+/*   Updated: 2021/11/12 21:07:43 by tpeggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	len = ft_strlen((char *)s);
-	str = (char *)malloc(sizeof(char) * (len +1));
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
 	while (i < len)
